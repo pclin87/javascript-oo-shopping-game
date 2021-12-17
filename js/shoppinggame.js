@@ -9,9 +9,9 @@ var player = {
     name,
     score,
     items,
-    getCurrentScore(){ return this.score},
-    addPoints(points){ points + this.getCurrentScore},
-    deductPoints(points){points - this.getCurrentScore},
+    getCurrentScore(){ return this.score },
+    addPoints(points){ return points + this.getCurrentScore },
+    deductPoints(points){ return points - this.getCurrentScore },
 }
 
 // Define the Product class - write the Constructor function for Product class here
