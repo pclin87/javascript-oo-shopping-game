@@ -8,7 +8,10 @@ const items = 0
 var player = {
     name,
     score,
-    items
+    items,
+    getCurrentScore(){ return this.score},
+    addPoints(points){ points + this.getCurrentScore},
+    deductPoints(points){points - this.getCurrentScore},
 }
 
 // Define the Product class - write the Constructor function for Product class here
