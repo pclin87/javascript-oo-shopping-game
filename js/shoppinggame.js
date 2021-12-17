@@ -36,6 +36,9 @@ const dateDiff = (date1, date2) => {
 };
 
 // Here, use Object.defineProperty to create property - daysToExpire
+Object.defineProperty(Product, daysToExpire,{
+    get daysToExpire(){}
+})
 
 // Add method getDetails to Product here
 
