@@ -209,7 +209,7 @@ function loadMasterData() {
 
 // Complete this function
 const findProductById = (id) => {
-    return function(prduct){
+    return function(product){
         return id == product.id
     }
 };
