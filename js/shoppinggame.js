@@ -347,6 +347,7 @@ function init(data) {
     // Complete this function
     const rateAndExit = () => {
         // Create a new instance of Rating and assign it to a variable named playerRating here
+        playerRating = new Rating 
         rl.question("How would you rate this game on a scale of 1-10 (1 being the lowest)?:", function (r) {
             if (r == "" || isNaN(r) || r == 0 || r > 10) {
                 console.log("Invalid rating! Please nter a number from 1 - 10".red);
