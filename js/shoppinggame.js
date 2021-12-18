@@ -260,7 +260,7 @@ const calculatePoints = (prod, tBill) => {
     let pointsForExpDate = findPointsForExpDate(prod);
     player.score = player.score + pointsToBill + pointsForExpDate
     if(prod instanceof MagicProduct){
-        if(prod == MagicProduct.isBonus){
+        if(prod.isBonus){
             player.addPoints(prod.points)
         } else{player.deductPoints(prod.points)}
     }
