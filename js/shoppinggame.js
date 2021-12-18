@@ -356,7 +356,7 @@ function init(data) {
                 // Call rating setter method of playerRating to set user entered rate value here
                 playerRating.rating = r
                 // Call Object.assign() method here to populate target
-                
+                Object.assign(target, player, playerRating)
                 console.log(`${target.name} you rated this game as ${target.rate}`.green);
                 console.log("Thank you for your valuable feedback.".blue);
                 rl.close();
