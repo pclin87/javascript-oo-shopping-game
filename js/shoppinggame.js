@@ -209,16 +209,14 @@ function loadMasterData() {
 
 // Complete this function
 const findProductById = (id) => {
-    return function(){
-        if (id === Product.id) {
-            return true
-        } else { return false}
-     } 
+    return function(prduct){
+        return id == product.id
+    }
 };
 
 // Complete this function
 const generateProductId = () => {
-    Math.floor((Math.random()*20)+1)
+    return Math.floor(Math.random()*20)+1
 };
 
 
